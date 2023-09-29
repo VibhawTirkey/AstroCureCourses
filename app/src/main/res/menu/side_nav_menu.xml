@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/side_nav_fav_courses"
+        android:icon="@drawable/ic_favourite_courses"
+        android:title="Favourite Courses" />
+
+    <item
+        android:id="@+id/side_nav_class_schedule"
+        android:icon="@drawable/ic_my_classes_schedule"
+        android:title="My Classes Schedule" />
+
+    <group
+        android:id="@+id/side_nav_group_class"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/side_nav_time_table"
+            android:title="Time Table" />
+
+        <item
+            android:id="@+id/side_nav_downloads"
+            android:title="Downloads" />
+
+    </group>
+
+
+    <item
+        android:id="@+id/side_nav_notification"
+        android:icon="@drawable/ic_notification"
+        android:title="Notification" />
+
+    <item
+        android:id="@+id/side_nav_course_payment"
+        android:icon="@drawable/ic_courses_payment"
+        android:title="Courses Payment" />
+
+    <item
+        android:id="@+id/side_nav_course_schedule"
+        android:icon="@drawable/ic_full_course_schedule"
+        android:title="Full Course Schedule" />
+
+    <item
+        android:id="@+id/side_nav_following"
+        android:icon="@drawable/ic_following"
+        android:title="Following" />
+
+    <item
+        android:id="@+id/side_nav_certificate"
+        android:icon="@drawable/ic_certificate"
+        android:title="Certificate" />
+
+    <item
+        android:id="@+id/side_nav_fav_setting"
+        android:icon="@drawable/ic_setting"
+        android:title="Settings" />
+
+</menu>

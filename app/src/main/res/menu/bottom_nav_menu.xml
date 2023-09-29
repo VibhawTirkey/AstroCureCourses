@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/horoscope"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Horoscope" />
+    <item
+        android:id="@+id/feeds"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Feeds" />
+    <item
+        android:id="@+id/videos"
+        android:title="" />
+    <item
+        android:id="@+id/entertainment"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Games" />
+
+    <item
+        android:id="@+id/courses"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Courses" />
+</menu>

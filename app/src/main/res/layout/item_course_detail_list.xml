@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        app:strokeWidth="0dp"
+        app:cardElevation="3dp"
+        android:theme="@style/Theme.Material3.Light"
+        app:layout_constraintWidth_percent=".93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/img_container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintDimensionRatio="20:31"
+                app:layout_constraintWidth_percent=".24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/course_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_provide_tarot"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:paddingBottom="2dp"
+                android:paddingTop="1dp"
+                android:textSize="12sp"
+                android:text="Recorded Course"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_course_tag_yellow"
+                app:layout_constraintTop_toTopOf="@id/img_container"
+                app:layout_constraintStart_toEndOf="@id/img_container"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:padding="5dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tag" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Learn Vedic Astrology Part 1"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/tag"
+                app:layout_constraintTop_toBottomOf="@id/tag"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <TextView
+                android:id="@+id/student_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="397 students"
+                android:drawablePadding="5dp"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:drawableStart="@drawable/ic_course_student"
+                app:layout_constraintStart_toStartOf="@id/tag"
+                app:layout_constraintTop_toBottomOf="@id/title"/>
+
+            <TextView
+                android:id="@+id/language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Hindi,English"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_course_language"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@id/student_count"
+                app:layout_constraintTop_toTopOf="@id/student_count"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:textColor="@color/black"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:text="Learn astronomy for astrologers, planetary &amp; sign characteristics, Rahu &amp; Ketu mythology, and pick up online resources."
+                app:layout_constraintTop_toBottomOf="@id/student_count"
+                app:layout_constraintEnd_toEndOf="@id/title"
+                app:layout_constraintStart_toStartOf="@id/tag"
+                app:layout_constraintBottom_toTopOf="@id/faculty_name"/>
+
+            <TextView
+                android:id="@+id/faculty_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faculty: Dr. V.M Agrawal"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/tag"
+                app:layout_constraintBottom_toBottomOf="@id/img_container"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="₹999 / Per Module"
+                android:textColor="#0A05FB"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/faculty_name"
+                app:layout_constraintStart_toStartOf="@id/tag"/>
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/bg_rate_astrologer"
+                android:drawableRight="@drawable/ic_rate_astrologer"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:minHeight="0dp"
+                android:text="5.0"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/price" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

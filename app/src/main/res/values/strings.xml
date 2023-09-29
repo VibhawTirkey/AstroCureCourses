@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AstroCureCourses</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="course_detail_content_dummy">Chapter 1: Introduction to Vedic Astrology\n\n
+What is Vedic Astrology?\n
+Historical Roots and Significance of Vedic Astrology\n
+Differences Between Western and Vedic Astrology\n\n
+Chapter 2: Foundations of Vedic Astrology\n\n
+The Importance of Planets (Grahas) in Vedic Astrology\n
+Understanding Nakshatras (Lunar Mansions)\n
+The Twelve Zodiac Signs (Rashis) in Vedic Astrology\n\n
+Chapter 3: The Birth Chart (Kundli)\n\n
+Casting and Interpretation of the Birth Chart\n
+The Role of the Ascendant (Lagna) and Moon Sign (Rashi)\n
+Planetary Houses (Bhavas) in the Birth Chart\n\n
+Chapter 4: Planetary Influences\n\n
+The Sun (Surya) and Its Significance\n
+The Moon (Chandra) and Emotional Well-being\n\n
+      See More....</string>
+</resources>
